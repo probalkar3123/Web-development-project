@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Comforter&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+        background-size: 1600px 730px;
+        color: white;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    .left {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 25px;
+        text-shadow: rgb(224, 222, 222) 1px 1px 1px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    .btn {
+        margin: 0px 12px;
+        border: transparent 1;
+        background-color: rgb(224, 222, 222);
+        padding: 3px 15px;
+        border-radius: 10px;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+
+    .container {
+        border: 5px solid cyan;
+        border-radius: 30px;
+        width: 35%;
+        margin: 50px 200px;
+        /* height: 675px; */
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        line-height: 17px;
+    }
+    h1{
+        font-style: italic;
+        font-size: 32px;
+        
+    }
+    h3{
+        display: inline-block;
+        
+    }
+    h3.address{
+        position: relative;
+        bottom: 100px;
+    }
+    .form-group input, textarea{
+        border: none;
+        border-radius: 10px;
+        margin: 5px auto;
+        padding: 5px;
+        text-align: center;
+        width: 400px;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+    
+    
+    input.submit{
+        width: 30%;
+        background-color: rgb(97, 235, 97);
+        cursor: pointer;
+        border: 1 transparent;
+        border-radius: 10px;
+        margin: 5px auto;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        margin-bottom: 13px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    input.submit:hover{
+        background-color: rgb(56, 224, 56);
+    }
+    #name{
+        margin-right: 20px;
+    }
+    #age{
+        margin-right: 37px;
+    }
+    #dob{
+        margin-right: 23px;
+    }
+    #email{
+        margin-right: 24px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="Gym-Fitness-club-logo-design-on-transparent-background-PNG.png" alt="">
+            <!-- <div>K.F.C.</div> -->
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="https://www.google.com/maps/place/KRISHNA'S+FITNESS+CENTRE+(K.F.C)/@19.8796136,73.8401158,17z/data=!4m12!1m6!3m5!1s0x3bddbe1d50b1b8e1:0xb0ebe066540c1ef9!2sKRISHNA'S+FITNESS+CENTRE+(K.F.C)!8m2!3d19.8796224!4d73.8423645!3m4!1s0x3bddbe1d50b1b8e1:0xb0ebe066540c1ef9!8m2!3d19.8796224!4d73.8423645" target="_blank">Location</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Sign In</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join Krishna's Fitness Center Now</h1>
+            <form action="">
+                <div class="form-group">
+                    <h3 id="name">Name:&nbsp;</h3> <input type="text" name="" id="" placeholder="Enter your name">
+                    
+                </div>
+                <div class="form-group">
+                    <h3 id="age">Age:&nbsp;</h3> <input type="number" name="" id="" placeholder="Enter your age">
+
+                </div>
+                <div class="form-group">
+                    <h3 id="dob">D.O.B.:&nbsp;</h3> <input type="date" name="" id="" placeholder="Enter your D.O.B.">
+
+                </div>
+                <div class="gender">
+                    <h3>Gender:&nbsp;&nbsp;</h3>
+                    Male <input type="radio" name="" id=""> Female <input type="radio" name="" id="">
+
+                </div>
+                <div class="form-group">
+                    <h3 class="address">Address:&nbsp;</h3> <textarea name="" id="" cols="30" rows="5" placeholder="Enter your address"></textarea>
+
+                </div>
+                <div class="form-group">
+                    <h3 id="email">Email:&nbsp;</h3> <input type="email" name="" id="" placeholder="Enter your email address">
+
+                </div>
+                <input type="submit" value="Join" class="submit">
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
